@@ -65,7 +65,7 @@ body{
     body{
         background: url(../images/citygif.gif) no-repeat top center;
         background-attachment: fixed;
-        background-size: 100vh;        
+            
         display: block;
         
     }
