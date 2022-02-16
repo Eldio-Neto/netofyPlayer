@@ -6,31 +6,24 @@ let musicas = [
 ]
 
 let musica = document.querySelector("audio")
-
 var playimg = document.getElementById("play")
-
 let change = false
-
 let musicDuration= document.querySelector("#final")
-
 let titulo = document.querySelector('marquee')
-
 let barra = document.querySelector('#barra')
-
 let i = 0
-
 
 renderizarMusica(i)
 
-
+// Eventos
 musica.addEventListener('timeupdate', atualizarBarra)
-document.querySelector('#voltarMusica').addEventListener('click', voltar_musica); //=>{
-
+document.querySelector('#voltarMusica').addEventListener('click', voltar_musica); 
 document.querySelector('#proximaMusica').addEventListener('click',avancar_musica);
-//document.querySelector('#diminuirVol').addEventListener('click',)
-//document.querySelector('#aumentarVol').addEventListener('click',)
+document.querySelector('#diminuirVol').addEventListener('click',diminuirVol)
+document.querySelector('#aumentarVol').addEventListener('click',aumentarVol)
+document.querySelector('#play').addEventListener('click', play)
 
-
+// Funções
 function renderizarMusica(index){
 
     musica.setAttribute('src', musicas[index].src)
@@ -42,7 +35,6 @@ function renderizarMusica(index){
 
 
 }
-
 function play(){
 
     musica.play();
@@ -56,9 +48,9 @@ function pauseM(){
 function atualizarBarra(){
 
 
-   barra.value = Math.floor((musica.currentTime / musica.duration)*100)
+   barra.value = Math.floor(musica.currentTime)
 
-   barra.max = musica.duration
+   barra.max =  Math.floor (musica.duration)
 
    var tempoDecorrido = document.querySelector('#inicio')
 
@@ -67,12 +59,12 @@ function atualizarBarra(){
    musicDuration.textContent= segundoparaminuto(Math.floor(musica.duration - musica.currentTime))
 
    if (musica.currentTime == musica.duration){
-       
+        change = false
        avancar_musica()
    }
+  
 
 }
-
 function segundoparaminuto(segundos){
 
     let campominuto = Math.floor(segundos/60);
@@ -84,10 +76,9 @@ function segundoparaminuto(segundos){
 
     return campominuto + ":" +  camposegundos
 }
-
 function voltar_musica(){
     i--;
-    if(i<0){
+    if(i < 0){
         i = 3
     }
     renderizarMusica(i)
@@ -96,7 +87,7 @@ function voltar_musica(){
 }
 function avancar_musica(){
     i++;
-    if(i>3){
+    if(i > 3){
         i=0
     }
     renderizarMusica(i)
@@ -109,7 +100,6 @@ function diminuirVol(){
 function aumentarVol(){
     musica.volume+=0.1
 }
-
 function changeIMG(){
 
     if (!change){
@@ -125,6 +115,10 @@ function changeIMG(){
     }
 
 }
+
+
+
+
 
 
 
