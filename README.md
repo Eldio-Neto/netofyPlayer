@@ -10,4 +10,4 @@ Ainda não está completo, falta fazer ajustes para a barra de progresso alterar
 ![image](https://user-images.githubusercontent.com/97411284/154341496-9393f3cd-952c-464e-8795-38daa5af370f.png)
 
 
-https://eldio-neto.github.io/player/
+https://eldio-neto.github.io/netofyPlayer/
