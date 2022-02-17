@@ -22,6 +22,7 @@ document.querySelector('#proximaMusica').addEventListener('click',avancar_musica
 document.querySelector('#diminuirVol').addEventListener('click',diminuirVol)
 document.querySelector('#aumentarVol').addEventListener('click',aumentarVol)
 document.querySelector('#play').addEventListener('click', play)
+barra.addEventListener('click', definirTempo)
 
 // Funções
 function renderizarMusica(index){
@@ -114,6 +115,9 @@ function changeIMG(){
         pauseM()
     }
 
+}
+function definirTempo(){
+    musica.currentTime = barra.value;
 }
 
 
