@@ -1,4 +1,4 @@
-# player
+# Netofy player
 Player using HTML,CSS and JS
 
 Fala galera!
