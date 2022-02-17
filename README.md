@@ -14,7 +14,8 @@ Mais um projeto desenvolvido por mim, dessa vez foi um player de musica simples.
 
 
 
-![image](https://user-images.githubusercontent.com/97411284/154341496-9393f3cd-952c-464e-8795-38daa5af370f.png)
+
+![Netofy 5](https://user-images.githubusercontent.com/97411284/154389197-4001f2ca-8c17-4a04-9703-3c60714c3f64.gif)
 
 ![responsividade Netofy 4](https://user-images.githubusercontent.com/97411284/154388835-52e78d35-6e27-42a8-ba49-57ebfcf5e054.gif)
 
