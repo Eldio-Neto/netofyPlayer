@@ -23,5 +23,5 @@ Mais um projeto desenvolvido por mim, dessa vez foi um player de musica simples.
 
 
 
-
+<h2>Veja você mesmo :D</h2>
 https://eldio-neto.github.io/netofyPlayer/
