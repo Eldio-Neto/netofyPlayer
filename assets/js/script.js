@@ -23,6 +23,9 @@ document.querySelector('#diminuirVol').addEventListener('click',diminuirVol)
 document.querySelector('#aumentarVol').addEventListener('click',aumentarVol)
 document.querySelector('#play').addEventListener('click', play)
 barra.addEventListener('click', definirTempo)
+barra.addEventListener('touchend', definirTempo)
+
+
 
 // Funções ->
 function renderizarMusica(index){
