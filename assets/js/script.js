@@ -24,7 +24,7 @@ document.querySelector('#aumentarVol').addEventListener('click',aumentarVol)
 document.querySelector('#play').addEventListener('click', play)
 barra.addEventListener('click', definirTempo)
 
-// Funções
+// Funções ->
 function renderizarMusica(index){
 
     musica.setAttribute('src', musicas[index].src)
