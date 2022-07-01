@@ -73,7 +73,10 @@ function segundoparaminuto(segundos){
 
     let campominuto = Math.floor(segundos/60);
     let camposegundos =  segundos % 60;
-    if (camposegundos < 10){
+    if (isNaN(segundos)){
+        return '0:00'
+    }    
+    else if (camposegundos < 10){
 
         camposegundos = "0" + camposegundos
     }
